@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exautomobile Design</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#" class="logo">
+                        <img src="assets/logo-white.png" alt="logo" class="logo-white">
+                        <img src="assets/logo-dark.png" alt="logo" class="logo-dark">
+                        <span>Exautomobile</span>
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">A propos de nous</a></li>
+                <li><a href="#deals">Offres de location</a></li>
+                <li><a href="#choose">Pourquoi nous choisir?</a></li>
+                <li><a href="#">Temoignages</a></li>
+                <li><a href="#">S'enregistrer</a></li>
+            </ul>
+            <div class="nav__btns">
+                <button class="btn">S'enregistrer</button>
+            </div>
+        </nav>
+        <div class="header__container" id="home">
+            <div class="header__image">
+                <img src="assets/header.png" alt="header">
+            </div>
+            <div class="header__content">
+                <h2>👍 Plateforme de location de voitures 100 % fiable au Congo</h2>
+                <h1>UN MOYEN RAPIDE ET FACILE DE LOUER UNE VOITURE</h1>
+                <p class="section__description">
+                    découvrez une expérience de location de voiture fluide avec nous. choisissez parmi une gamme de véhicules haut de gamme adaptés à votre style et à vos besoins et prenez la route en toute confiance. Rapide, facile et fiable - louez votre dès aujourd'hui !
+
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="header__form">
+        <form action="/">
+            <div class="input__group">
+                <label for="location"> Lieu de prise en charge et de retour </label>
+                <input type="text" name="location" id="location" placeholder="Brazzaville, Congo">
+            </div>
+            <div class="input__group">
+                <label for="start"> Date de retrait</label>
+                <input type="text" name="start" id="start" placeholder="Aug 16, 10:00 AM">
+            </div>
+            <div class="input__group">
+                <label for="stop"> Date de retour </label>
+                <input type="text" name="stop" id="stop" placeholder="Aug 18, 10:00 AM">
+            </div>
+            <button class="btn"> Rechercher <i class="ri-search-line"></i></button>
+        </form>
+    </section>
+    <section class="section__container about__container" id="about">
+        <h2 class="section__header">
+            Comment ça marche
+        </h2>
+        <p class="section__description">
+            Louer une voiture avec nous, c'est simple ! Choisissez votre véhicule, choisissez vos dates,
+            et complétez votre réservation. Nous nous occuperons du reste, assurant un bon déroulement
+            commencez votre voyage.
+        </p>
+        <div class="about__grid">
+            <div class="about__card">
+                <span><i class="ri-map-pin-fill"></i></span>
+                <h4>Choisissez un emplacement</h4>
+                <p>
+                    Choisissez parmi une variété de lieux de prise en charge qui conviennent le mieux à votre
+                    besoins, que ce soit près de chez vous, du travail ou de l'aéroport.
+                </p>
+            </div>
+            <div class="about__card">
+                <span><i class="ri-calendar-event-fill"></i></span>
+                <h4>Date de prise en charge</h4>
+                <p>
+                    Choisissez la date et l'heure exactes de la prise en charge de votre voiture, en vous assurant que
+                    votre véhicule est prêt quand vous en avez besoin.
+                </p>
+              </div>
+              <div class="about__card">
+                <span><i class="ri-roadster-fill"></i></span>
+                <h4>Réservez votre voiture</h4>
+                <p>
+                    Complétez votre réservation en quelques clics et nous préparerons votre
+                    véhicule pour assurer une prise en charge sans tracas.
+                </p>
+              </div>
+        </div>
+    </section>
+    <section class="deals" id="deals">
+        <div class="section__container deals__container">
+          <h2 class="section__header">Offres de location de voitures les plus populaires</h2>
+          <p class="section__description">
+            Découvrez nos meilleures offres de location de voitures, triées sur le volet pour vous offrir le meilleur.
+            valeur et expérience. Réservez maintenant et conduisez votre véhicule préféré à un
+            tarif incroyable !
+          </p>
+          <div class="deals__tabs">
+            <button class="btn active" data-id="Tesla">Tesla</button>
+            <button class="btn" data-id="Mitsubishi">Mitsubishi</button>
+            <button class="btn" data-id="Mazda">Mazda</button>
+            <button class="btn" data-id="Toyota">Toyota</button>
+            <button class="btn" data-id="Honda">Honda</button>
+          </div>
+          <div id="Tesla" class="tab__content active">
+            <div class="deals__card">
+              <img src="assets/deals-1.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(550)</span>
+              </div>
+              <h4>Tesla Model S</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Pilote automatique
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 400km
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Électrique
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>65000<span>/Par Jour</span></h3>
+                <a href="#">
+                    Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-2.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(450)</span>
+              </div>
+              <h4>Tesla Model E</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Pilote automatique
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 400km
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Electric
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>50000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-3.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(550)</span>
+              </div>
+              <h4>Tesla Model Y</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Pilote automatique
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 400km
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Electrique
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>20000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="Mitsubishi" class="tab__content">
+            <div class="deals__card">
+              <img src="assets/deals-4.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(350)</span>
+              </div>
+              <h4>Mirage</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>120000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-5.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(250)</span>
+              </div>
+              <h4>Xpander</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>650000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-6.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(150)</span>
+              </div>
+              <h4>Pajero Sports</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>45000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="Mazda" class="tab__content">
+            <div class="deals__card">
+              <img src="assets/deals-7.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(200)</span>
+              </div>
+              <h4>Mazda CX5</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>75000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-8.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(100)</span>
+              </div>
+              <h4>Mazda CX-30</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>80000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-9.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(180)</span>
+              </div>
+              <h4>Mazda CX-9</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>65000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="Toyota" class="tab__content">
+            <div class="deals__card">
+              <img src="assets/deals-10.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(250)</span>
+              </div>
+              <h4>Corolla</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>450000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-11.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(550)</span>
+              </div>
+              <h4>Innova</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>45000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-12.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(180)</span>
+              </div>
+              <h4>Fortuner</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>50000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="Honda" class="tab__content">
+            <div class="deals__card">
+              <img src="assets/deals-13.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(200)</span>
+              </div>
+              <h4>Amaze</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>40000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-14.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(350)</span>
+              </div>
+              <h4>Elevate</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>100000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals__card">
+              <img src="assets/deals-15.png" alt="deals" />
+              <div class="deals__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span>(300)</span>
+              </div>
+              <h4>City</h4>
+              <div class="deals__card__grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 Personnes
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manuel
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/l
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr />
+              <div class="deals__card__footer">
+                <h3>60000<span>/Par Jour</span></h3>
+                <a href="#">
+                   Louer maintenant
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose__container" id="choose">
+        <div class="choose__image">
+          <img src="assets/choose.png" alt="choose" />
+        </div>
+        <div class="choose__content">
+          <h2 class="section__header">Pourquoi nous choisir</h2>
+          <p class="section__description">
+            Découvrez la différence avec notre service de location de voiture. Nous offrons des
+            un service à la clientèle exceptionnel et des prix concurrentiels
+            Assurez-vous d’une expérience de location sans faille.
+          </p>
+          <div class="choose__grid">
+            <div class="choose__card">
+              <span><i class="ri-customer-service-line"></i></span>
+              <div>
+                <h4>Service à la clientèle</h4>
+                <p>Notre équipe d’assistance dédiée est disponible pour vous aider 24h/24 et 7j/7.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-map-pin-line"></i></span>
+              <div>
+                <h4>De nombreux endroits</h4>
+                <p>
+                    Lieux de prise en charge et de dépose pratiques en fonction de votre voyage
+                    besoins.
+                </p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-wallet-line"></i></span>
+              <div>
+                <h4>Meilleur prix</h4>
+                <p>Profitez de tarifs compétitifs et d’un excellent rapport qualité-prix pour chaque location.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-user-star-line"></i></span>
+              <div>
+                <h4>Pilote d’expérience</h4>
+                <p>Des chauffeurs fiables et professionnels sont disponibles sur demande.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-verified-badge-line"></i></span>
+              <div>
+                <h4>Marques vérifiées</h4>
+                <p>Choisissez parmi des marques de voitures de confiance et bien entretenues.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-calendar-close-line"></i></span>
+              <div>
+                <h4>Annulations gratuites</h4>
+                <p>Réservations flexibles avec options d’annulation gratuites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>
